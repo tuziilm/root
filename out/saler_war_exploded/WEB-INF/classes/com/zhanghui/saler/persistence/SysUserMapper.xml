@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.zhanghui.root.persistence.SysUserMapper" >
-    <resultMap id="BaseResultMap" type="com.zhanghui.root.domain.SysUser" >
+<mapper namespace="com.honest.truth.persistence.SysUserMapper" >
+    <resultMap id="BaseResultMap" type="com.honest.truth.domain.SysUser" >
         <id column="id" property="id" jdbcType="INTEGER" />
         <result column="username" property="username" jdbcType="VARCHAR" />
         <result column="passwd" property="passwd" jdbcType="VARCHAR" />
@@ -22,7 +22,7 @@
         </foreach>
     </delete>
 
-    <insert id="insert" parameterType="com.zhanghui.root.domain.SysUser" >
+    <insert id="insert" parameterType="com.honest.truth.domain.SysUser" >
         <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER" >
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -43,7 +43,7 @@
         from sys_user
     </select>
 
-    <select id="select" resultMap="BaseResultMap" parameterType="com.zhanghui.root.common.Paginator" >
+    <select id="select" resultMap="BaseResultMap" parameterType="com.honest.truth.common.Paginator" >
         select
         <include refid="Base_Column_List" />
         from sys_user
@@ -66,7 +66,7 @@
         from sys_user where username=#{username}
     </select>
 
-    <update id="updateByIdSelective" parameterType="com.zhanghui.root.domain.SysUser" >
+    <update id="updateByIdSelective" parameterType="com.honest.truth.domain.SysUser" >
         update sys_user
         <set >
             <if test="username != null" >

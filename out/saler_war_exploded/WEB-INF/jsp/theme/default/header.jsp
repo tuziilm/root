@@ -1,5 +1,5 @@
-<%@page import="com.zhanghui.root.common.SystemUserType"%>
-<%@page import="com.zhanghui.root.common.LoginContext"%>
+<%@page import="com.honest.truth.common.SystemUserType"%>
+<%@page import="com.honest.truth.common.LoginContext"%>
 <%@ include file="../../include/common.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

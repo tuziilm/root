@@ -4,13 +4,13 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="root" />
+          <element id="module-output" name="truth" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="lib" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="root/web/Web" />
+      <element id="javaee-facet-resources" facet="truth/web/Web" />
     </root>
   </artifact>
 </component>

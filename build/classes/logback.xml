@@ -3,7 +3,7 @@
 	<appender name="MAIN"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>/home/root/work/logs/root.%d{yyyy-MM-dd}.log
+			<fileNamePattern>/home/truth/work/logs/root.%d{yyyy-MM-dd}.log
 			</fileNamePattern>
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
@@ -17,7 +17,7 @@
     <appender name="STATISTIC_FILE"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>/home/root/work/logs/statistic.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>/home/truth/work/logs/statistic.%d{yyyy-MM-dd}.log</fileNamePattern>
         </rollingPolicy>
         <encoder>
             <pattern>%msg%n</pattern>
@@ -25,9 +25,9 @@
         </encoder>
     </appender>
 
-	<logger name="com.zhanghui.root" level="INFO" />
+	<logger name="com.honest.truth" level="INFO" />
 
-	<logger name="com.zhanghui.root.common.LogStatistics" level="INFO"
+	<logger name="com.honest.truth.common.LogStatistics" level="INFO"
 		additivity="false">
 		<appender-ref ref="STATISTIC_FILE" />
 	</logger>

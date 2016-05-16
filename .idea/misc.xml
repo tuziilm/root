@@ -42,7 +42,7 @@
     <entry_points version="2.0" />
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/src/com/zhanghui/root/common/JsonUtils.java" />
+    <file type="web" url="file://$PROJECT_DIR$/src/com/honest/truth/common/JsonUtils.java" />
   </component>
   <component name="IdProvider" IDEtalkID="B2720D1C1369028C0000DA9240AA5167" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
